@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title> Jeremy Krovitz Notes </title>
+
+    <style>
+        #toc_container {
+            background: #f9f9f9 none repeat scroll 0 0;
+            border: 1px solid #aaa;
+            display: table;
+            font-size: 95%;
+            margin-bottom: 1em;
+            padding: .5em;
+            /* width: auto; */
+        }
+
+        .toc_title {
+            font-weight: 700;
+            text-align: left;
+            margin-left: .25em;
+        }
+
+        #toc_container li,
+        #toc_container ul,
+        #toc_container ul li {
+            list-style: outside none none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Jeremy Krovitz Notes </h1>
+    <div id="toc_container">
+        <p class="toc_title">Notes Outline</p>
+        <ul class="toc_list">
+            <li><a href="#NotesonWednesdayJanuary292020">Notes on Wednesday, January 29, 2020</a>
+                <ul>
+                    <li><a href="#Feedback01292020">Feedback</a></li>
+                    <li><a href="#Questions01292020">Questions</a></li>
+                    <li><a href="#ActionPlan01292020">Action Plan</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <h2 id='NotesonWednesdayJanuary292020'>Notes on Wednesday, January 29, 2020</h2>
+    <h3 id='Feedback01292020'>Feedback</h3>
+    <ul>
+        <li>Checked over <strong>notebooks/dataframe_view.ipynb</strong>. Looks fine. No concerns.</li>
+        <li>Checked over <strong>notebooks/psychology_today_scrap.ipynb</strong>. Concerned about webdriver. I
+            have a Mac, and had to download the webdriver for Mac as well as the fact that the file is called
+            using a full path instead of a relative path. This situation will code collaboration a little more
+            tedius. I'm not sure of alternatives yet, as I haven't had time to research, but I'm hoping to have
+            time to research something else.</li>
+        <li>Checked over <strong>notebooks/save_to_db.ipynb.</strong>Was able to load data from the
+            <strong>data/pitt_data.txt</strong> file and have downloaded MongoDB but have not yet configured the
+            MongoDB client with port 27017, as Chris has done.</li>
+        <li>Checked over <strong>notebooks/test.ipynb.</strong>Was to run all cells with no errors; however, my
+            concerns about the webdriver remain.</li>
+    </ul>
+    <h3 id='Questions01292020'>Questions</h3>
+    <ul>
+        <li>What is the anticipated end result of the code? What are we trying to achieve? I plan on asking
+            Collin for additional clarification. Are we building a search engine for the LDA of PA website, a
+            list of resources on the site, both, or something completely different? Are we not sure yet? </li>
+        <li>Before I even looked at this code, I had seen the Learning Disability search engine on the
+            Psychology Today website. Instead of outputing the data from Psych Today's database, couldn't we
+            just write an Ajax request so that when a user searched for resources on the LDA of PA website it
+            would make a request from Psychology Today? I'm thinking this might help with the information
+            staying current.</li>
+    </ul>
+    <h3 id='ActionPLan01292020'>Action Plan</h3>
+    <p>When I have time, I plan on doing more research on different tools we can use.</p>
+</body>
+
+</html>
